@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { Background } from "src/app/models/Background.model";
+import { BackgroundService } from "src/app/services/background.service";
 
 @Component({
   selector: "app-gallery",
@@ -7,41 +8,11 @@ import { Background } from "src/app/models/Background.model";
   styleUrls: ["./gallery.component.scss"]
 })
 export class GalleryComponent {
-  public backgrounds: Background[] = [
-    {
-      url: "http://google.com",
-      name: "google",
-      archived: false,
-    },
-    {
-      url: "http://google.com",
-      name: "google",
-      archived: false,
-    },
-    {
-      url: "http://google.com",
-      name: "google",
-      archived: false,
-    },
-    {
-      url: "http://google.com",
-      name: "google",
-      archived: false,
-    },
-    {
-      url: "http://google.com",
-      name: "google",
-      archived: false,
-    },
-    {
-      url: "http://google.com",
-      name: "google",
-      archived: false,
-    },
-    {
-      url: "http://google.com",
-      name: "google hide",
-      archived: true,
-    },
-  ];
+  public get backgrounds(): Background[] {
+    return this.backgroundService.featuredBackgrounds;
+  }
+
+  constructor(
+    private backgroundService: BackgroundService,
+  ) { }
 }

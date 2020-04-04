@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
 import { BackgroundCardComponent } from "./background-card.component";
+import { CardComponent } from "../card/card.component";
 
 describe("BackgroundCardComponent", () => {
   let component: BackgroundCardComponent;
@@ -8,9 +9,9 @@ describe("BackgroundCardComponent", () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BackgroundCardComponent ]
+      declarations: [BackgroundCardComponent, CardComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

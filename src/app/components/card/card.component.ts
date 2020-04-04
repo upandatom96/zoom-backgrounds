@@ -10,6 +10,11 @@ export class CardComponent {
   @Input() public title: string = null;
   @Input() public icon: string = null;
   @Input() public autoHeight = true;
+  @Input() public imageUrl: string = null;
+
+  public get hasImage(): boolean {
+    return BooleanHelper.hasValue(this.imageUrl);
+  }
 
   public get hasTitle(): boolean {
     return BooleanHelper.hasValue(this.title);

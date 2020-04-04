@@ -4,7 +4,7 @@
   </div>
 
   <ng-container *ngFor="let background of backgrounds">
-    <div class="col-md-3" *ngIf="!background.archived">
+    <div class="col-md-4 my-3" *ngIf="!background.archived">
       <app-background-card [background]="background"></app-background-card>
     </div>
   </ng-container>
