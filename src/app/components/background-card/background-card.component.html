@@ -1,3 +1,7 @@
 <ng-container *ngIf="show">
-  <app-card [title]="background.name" [imageUrl]="background.url"></app-card>
+  <app-card
+    [title]="background.name"
+    [subtitle]="background.credit"
+    [imageUrl]="background.url"
+  ></app-card>
 </ng-container>
