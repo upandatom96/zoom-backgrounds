@@ -19,7 +19,7 @@ export class LogService {
     const log: Log = {
       level,
       message,
-      application: "fake-fan-adam"
+      application: "zoom-backgrounds"
     };
     const url = RestUrlBuilder.buildRestUrl({
       service: ServiceUrl.BasicExpress,

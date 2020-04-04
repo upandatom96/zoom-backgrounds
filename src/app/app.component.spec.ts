@@ -21,9 +21,9 @@ describe("AppComponent", () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'fake-fan-adam'`, () => {
+  it(`should have as title 'zoom-backgrounds'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual("fake-fan-adam");
+    expect(app.title).toEqual("zoom-backgrounds");
   });
 });

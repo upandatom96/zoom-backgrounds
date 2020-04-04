@@ -7,7 +7,7 @@ import { LogService } from "./services/log.service";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-  title = "fake-fan-adam";
+  title = "zoom-backgrounds";
 
   constructor(
     private logService: LogService,
