@@ -1,9 +1,11 @@
-<app-header
-  [title]="'Zoom Backgrounds'"
-  [subtitle]="'A personal home.'"
-></app-header>
+<app-header [title]="'Zoom Backgrounds'"></app-header>
 <app-body>
+  <app-gallery></app-gallery>
   <div class="row">
+    <div class="col-md-12">
+      <hr />
+      <h3 class="text-center mt-3">More</h3>
+    </div>
     <div class="col-md-6 my-3">
       <app-card [title]="'Donate to Charity'" [icon]="'fa-money'">
         <p>
@@ -19,7 +21,7 @@
       </app-card>
     </div>
     <div class="col-md-6 my-3">
-      <app-card [title]="'More Information'" [icon]="'fa-info-circle'">
+      <app-card [title]="'Information'" [icon]="'fa-info-circle'">
         <p>
           Just curious about this site? Get more information about this website.
         </p>
