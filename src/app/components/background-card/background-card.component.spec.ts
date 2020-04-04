@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { BackgroundCardComponent } from './background-card.component';
+import { BackgroundCardComponent } from "./background-card.component";
 
-describe('BackgroundCardComponent', () => {
+describe("BackgroundCardComponent", () => {
   let component: BackgroundCardComponent;
   let fixture: ComponentFixture<BackgroundCardComponent>;
 
@@ -19,7 +19,7 @@ describe('BackgroundCardComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

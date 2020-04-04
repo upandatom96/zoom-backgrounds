@@ -1,16 +1,18 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { GalleryComponent } from './gallery.component';
+import { GalleryComponent } from "./gallery.component";
+import { BackgroundCardComponent } from "../background-card/background-card.component";
+import { CardComponent } from "../card/card.component";
 
-describe('GalleryComponent', () => {
+describe("GalleryComponent", () => {
   let component: GalleryComponent;
   let fixture: ComponentFixture<GalleryComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GalleryComponent ]
+      declarations: [GalleryComponent, BackgroundCardComponent, CardComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +21,7 @@ describe('GalleryComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

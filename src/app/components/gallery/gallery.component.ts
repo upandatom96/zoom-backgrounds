@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { Background } from 'src/app/models/Background.model';
+import { Component } from "@angular/core";
+import { Background } from "src/app/models/Background.model";
 
 @Component({
-  selector: 'app-gallery',
-  templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.scss']
+  selector: "app-gallery",
+  templateUrl: "./gallery.component.html",
+  styleUrls: ["./gallery.component.scss"]
 })
 export class GalleryComponent {
   public backgrounds: Background[] = [
