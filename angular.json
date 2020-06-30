@@ -134,8 +134,13 @@
               "devServerTarget": "zoom-backgrounds:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "zoom-backgrounds"
 }
